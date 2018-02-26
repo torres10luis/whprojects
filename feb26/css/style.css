@@ -1,0 +1,39 @@
+body {
+  background-color: lightskyblue;
+  color: #eb0a0a;
+  font-style: italic;
+  font-family: cursive;
+}
+
+header {
+  display: flex;
+}
+
+header nav {
+  border: 10px dashed white;
+}
+
+header ul {
+  background-color: yellow;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article {
+  width: 75%;
+  background-color: springgreen;
+}
+
+aside {
+  width: 25%;
+  background-color: blue;
+}
+
+section {
+  background-color: salmon;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
