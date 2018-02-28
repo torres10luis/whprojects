@@ -1,0 +1,14 @@
+head {
+  background-image: url("");
+  background-size: cover;
+}
+
+nav {
+  background-color: #121212;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+}
+/*# sourceMappingURL=template2.css.map */

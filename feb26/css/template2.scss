@@ -1,8 +1,13 @@
-body{
-    margin: 0;
-}
-header{
-    background-image: url('../images2/pic01.jpg');
+head{
+    background-image: url('');
     background-size: cover;
+}
+nav{
+ background-color: rgb(18,18,18);
+
+}
+ul{
+    display: flex;
+    justify-content: center;
 
 }
