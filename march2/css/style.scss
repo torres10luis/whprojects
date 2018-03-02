@@ -1,0 +1,29 @@
+body{
+    background-color: snow;
+}
+p{
+    color: blue;
+}
+p.banana{
+    color: yellow;
+}
+.spoiled{
+    color: brown;
+}
+
+#apple{
+    color: teal;
+}
+#orange{
+    color: orange;
+}
+
+span{
+    color: purple;
+}
+div{
+    color: palevioletred;
+}
+div span {
+    color: orange;
+}
