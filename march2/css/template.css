@@ -103,9 +103,8 @@ header div {
   background-color: lightgray;
 }
 
-.boy {
-  padding: 10vw 3vw;
-  text-align: center;
-  background-color: lightgray;
+.ending {
+  background-color: white;
+  display: flex;
 }
 /*# sourceMappingURL=template.css.map */
