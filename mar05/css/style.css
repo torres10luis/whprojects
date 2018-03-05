@@ -1,0 +1,41 @@
+main {
+  background-color: lightcoral;
+  height: 50vh;
+  position: relative;
+}
+
+.img1 {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+}
+
+.img2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.img3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.img4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(32, 178, 170, 0.5);
+  z-index: 2;
+}
+/*# sourceMappingURL=style.css.map */
