@@ -54,7 +54,7 @@ header{
     display: flex;
     align-items: center;
     h1{
-        text-shadow: 0 0 30px transparentize($color: black, .5);
+        text-shadow: 0 0 30px transparentize( black, .5);
     }
 }
 
@@ -68,7 +68,7 @@ header{
     }
 }
 
-@media screen and (orientation:portrait) {
+@media screen and (orientation: portrait) {
     .ignite{
         background-color: red;
     }
@@ -77,14 +77,17 @@ header{
     }
 }
 
-@media screen and (max-width:300px){
-    h1{
-        font-size: 150%;
-    }
-}
 
-@media screen and (max-width: 572px){
+
+@media screen and (max-width: 672px){
    h1{
     font-size: 75%;
    } 
+}
+
+@media screen and (max-width:450px){
+    h1{
+        font-size: 150%;
+        color: yellow;
+    }
 }

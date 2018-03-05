@@ -9,11 +9,11 @@ header {
   overflow: hidden;
   background-color: #292c2e;
   position: relative;
+  height: 200px;
 }
 
 .skew {
   width: 50vw;
-  height: 200px;
   transform: skew(-45deg);
   transform-origin: left bottom;
 }
@@ -48,13 +48,45 @@ header {
   width: 50%;
 }
 
-.marque {
+.marquee {
   margin-left: -75px;
   display: flex;
   align-items: center;
 }
 
-.marque h1 {
-  text-shadow: 0 0 30px black;
+.marquee h1 {
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+@media print {
+  header {
+    height: 500px;
+    font-size: 300%;
+  }
+  .skew {
+    display: none;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .ignite {
+    background-color: red;
+  }
+  .classic {
+    background-color: blue;
+  }
+}
+
+@media screen and (max-width: 672px) {
+  h1 {
+    font-size: 75%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 150%;
+    color: yellow;
+  }
 }
 /*# sourceMappingURL=template.css.map */
