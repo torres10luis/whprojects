@@ -33,42 +33,42 @@ header{
     padding-bottom: 100px;
     text-align: center;
     color: white;
-
 }
 nav{
     background-color: white;
     margin-bottom: 100px;
     color: black;
     padding: 10px;
-
     ul{
         display: flex;
-    
     }
     li:first-child {
         margin-right: auto;
         text-transform: uppercase;
     }
     a{
-        padding: 5px 15px;
-        
+        padding: 5px 15px;       
     }
 }
-
-div{
-    padding: 40px;
-    background-color: snow;
+.one {
+    padding: 100px;
+    background-color: yellowgreen;
     text-align: center;
-
-    section {
-        display: flex;
-        justify-content:space-around;
-        padding: 20px;    
-        
+    display: flex;
+    display: block;
+    border: 2px solid tomato;
+    margin: auto;
+    .tag {
+        padding: 2px; 
+        background-color: steelblue;
+        border: 3px dashed black; 
+        margin: auto;  
+        text-align: center; 
     }
-    ul{
-        
+    .info {
         padding: 10px;
         border: 2px solid gray;
+        margin: auto;
+        background-color: white;
     }
 }

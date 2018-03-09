@@ -59,20 +59,28 @@ nav a {
   padding: 5px 15px;
 }
 
-div {
-  padding: 40px;
-  background-color: snow;
+.one {
+  padding: 100px;
+  background-color: yellowgreen;
+  text-align: center;
+  display: flex;
+  display: block;
+  border: 2px solid tomato;
+  margin: auto;
+}
+
+.one .tag {
+  padding: 2px;
+  background-color: steelblue;
+  border: 3px dashed black;
+  margin: auto;
   text-align: center;
 }
 
-div section {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
-}
-
-div ul {
+.one .info {
   padding: 10px;
   border: 2px solid gray;
+  margin: auto;
+  background-color: white;
 }
 /*# sourceMappingURL=template.css.map */
