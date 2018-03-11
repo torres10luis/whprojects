@@ -3,7 +3,66 @@ html {
     background-image: url('../Img/kawasaki.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
 }
 body{
+    color: black;
+    border: none;
+    margin: 0;
+    height: 100%;
     
+}
+header{
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    height: 200px;
+}
+.img1 {
+    flex-direction: column;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 10%;
+    .img-circle {
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        margin: 0;
+        padding: 0;
+    }
+    figcaption{
+    color: black;
+    font-weight: 600;
+    background-color: azure;
+    opacity: .7;
+    height: auto;
+    width: 100px;
+    border-radius: 10px;
+    border: 2px solid black;
+    }
+}
+div{
+    height: 200px;
+    display: flex;
+    width: 100px; 
+    
+}
+.lefty {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 2px dashed black;
+
+}
+.righty {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.content{
+
 }
