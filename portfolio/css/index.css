@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Mina");
 html {
   background-image: url("../Img/kawasaki.jpg");
   background-repeat: no-repeat;
@@ -7,17 +8,10 @@ html {
   padding: 0;
   height: 100%;
   width: 100%;
-}
-
-body {
-  color: black;
-  border: none;
-  margin: 0;
-  height: 100%;
+  font-family: 'Mina',sans-serif;
 }
 
 header {
-  padding: 10px;
   text-align: center;
   display: flex;
   height: 200px;
@@ -27,7 +21,6 @@ header {
   flex-direction: column;
   margin-left: 50%;
   margin-right: 50%;
-  margin-top: 10%;
 }
 
 .img1 .img-circle {
@@ -50,21 +43,59 @@ header {
 }
 
 div {
-  height: 200px;
   display: flex;
-  width: 100px;
 }
 
-.lefty {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  border: 2px dashed black;
+.home {
+  position: relative;
+  width: 50%;
 }
 
-.righty {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.image {
+  display: block;
+  width: 25%;
+  height: 10%;
+  border-radius: 20px;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease;
+  background-color: #008cba;
+}
+
+.home:hover .overlay {
+  opacity: 1;
+}
+
+.bio {
+  position: relative;
+  width: 50%;
+}
+
+.img2 {
+  width: 25%;
+  height: 10%;
+  border-radius: 20px;
+}
+
+.over2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 2s ease;
+  background-color: white;
+}
+
+.bio:hover .over2 {
+  opacity: 1;
+}
+
+#columns {
+  display: flex;
 }
 /*# sourceMappingURL=index.css.map */
