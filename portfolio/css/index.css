@@ -42,60 +42,45 @@ header {
   border: 2px solid black;
 }
 
-div {
+#columns {
   display: flex;
 }
 
-.home {
+div {
   position: relative;
-  width: 50%;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 5px;
+  margin: 0 auto;
 }
 
-.image {
-  display: block;
-  width: 25%;
-  height: 10%;
-  border-radius: 20px;
+image {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
 }
 
 .overlay {
   position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: 1s ease;
+  transition: all 1s ease;
   background-color: #008cba;
 }
 
-.home:hover .overlay {
+div:hover .overlay {
   opacity: 1;
 }
 
-.bio {
-  position: relative;
-  width: 50%;
-}
-
-.img2 {
-  width: 25%;
-  height: 10%;
-  border-radius: 20px;
-}
-
-.over2 {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 2s ease;
-  background-color: white;
-}
-
-.bio:hover .over2 {
+footer {
+  box-shadow: transparent black;
   opacity: 1;
-}
-
-#columns {
-  display: flex;
+  text-align: center;
+  bottom: 0;
 }
 /*# sourceMappingURL=index.css.map */
