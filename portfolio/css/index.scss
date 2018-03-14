@@ -1,96 +1,123 @@
 // @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css";
-@import url('https://fonts.googleapis.com/css?family=Mina');
+@import url("https://fonts.googleapis.com/css?family=Mina");
 html {
-    background-image: url('../Img/kawasaki.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    font-family: 'Mina',sans-serif;
+  background-image: url("../Img/kawasaki.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Mina", sans-serif;
 }
-header{
-    text-align: center;
-    display: flex;
-    height: 200px;
+
+header {
+  text-align: center;
+  display: flex;
+  height: 200px;
 }
 .img1 {
-    flex-direction: column;
-    margin-left: 50%;
-    margin-right: 50%;
-    .img-circle {
-        height: 100px;
-        width: 100px;
-        border-radius: 50px;
-        margin: 0;
-        padding: 0;
-    }
-    figcaption{
+  flex-direction: column;
+  margin-left: 47%;
+  // margin-right: 50%;
+  .img-circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    margin: 0;
+    padding: 0;
+  }
+  figcaption {
     color: black;
     font-weight: 600;
     background-color: azure;
-    opacity: .7;
+    opacity: 0.7;
     height: auto;
-    width: 100px;
     border-radius: 10px;
     border: 2px solid black;
-    }
+  }
 }
-// i{
-
-// }
-
 #columns {
-    display: flex;
+  display: flex;
+  justify-content: center;
+//   margin: 3px;
+//   justify-content: sp
+}
+// div{
+//     // display:block;
+//     position: relative;
+//     width: 200px;
+//     height: 200px;
+//     border-radius: 5px;
+//     margin: 0;
+// }.
+.project {
+//   display:block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border:none;
+  border-radius: 20px;
+  text-align: center;
+  margin: 10px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.fa-child {
+  margin-top: 20px;
+  animation: bounce 1s infinite alternate;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 1s ease;
+  background-color: lightblue;
+}
+div:hover .overlay {
+  opacity: 1;
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  font-weight: 100;
+  opacity: 0.7;
+}
+.info {
+  text-align: center;
+  color: black;
+  font-weight: 600;
+  background-color: azure;
+  opacity: 0.7;
+  border-radius: 10px;
+  border: 2px solid black;
+  width:20%;
+  padding: 5px;
+  margin:auto;
+}
+p {
+  top: 40px;
+  pointer-events: none;
+}
+h1{
+    margin:0;
+    padding: 0;
+}
 
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
 }
-div{
-    // display:block;
-    position: relative;
-    width: fit-content;
-    height: fit-content;
-    border-radius: 5px;
-    margin: 0 auto;
-    
-}
-image{
-    width: 20px;
-    height: 20px;
-    border-radius: 5px;
-}
-.overlay{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: all 1s ease;
-    background-color: #008cba;
-}
-div:hover .overlay{
-    opacity: 1;
-}
-footer{
-    // padding: 100px;
-    box-shadow: transparent black;
-    opacity: 1;
-    text-align: center;
-    bottom: 0;
-    
-}
-// @keyframes bounce {
-//     0%, 20%, 60%. 100% {
-//         transform: translateY(0);
-//     }
-//     40% {
-//         transform: translateY(-20px);
-//     }
-//     80% {
-//         transform: translateY(-10px);
-//     }
-// }

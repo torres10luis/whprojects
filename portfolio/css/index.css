@@ -8,7 +8,7 @@ html {
   padding: 0;
   height: 100%;
   width: 100%;
-  font-family: 'Mina',sans-serif;
+  font-family: "Mina", sans-serif;
 }
 
 header {
@@ -19,8 +19,7 @@ header {
 
 .img1 {
   flex-direction: column;
-  margin-left: 50%;
-  margin-right: 50%;
+  margin-left: 47%;
 }
 
 .img1 .img-circle {
@@ -35,42 +34,46 @@ header {
   color: black;
   font-weight: 600;
   background-color: azure;
-  opacity: .7;
+  opacity: 0.7;
   height: auto;
-  width: 100px;
   border-radius: 10px;
   border: 2px solid black;
 }
 
 #columns {
   display: flex;
+  justify-content: center;
 }
 
-div {
+.project {
   position: relative;
-  width: fit-content;
-  height: fit-content;
-  border-radius: 5px;
-  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  margin: 10px;
 }
 
-image {
-  width: 20px;
-  height: 20px;
-  border-radius: 5px;
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.fa-child {
+  margin-top: 20px;
+  animation: bounce 1s infinite alternate;
 }
 
 .overlay {
   position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
-  height: 100%;
   width: 100%;
+  height: 100%;
   opacity: 0;
   transition: all 1s ease;
-  background-color: #008cba;
+  background-color: lightblue;
 }
 
 div:hover .overlay {
@@ -78,9 +81,44 @@ div:hover .overlay {
 }
 
 footer {
-  box-shadow: transparent black;
-  opacity: 1;
-  text-align: center;
+  position: fixed;
+  left: 0;
   bottom: 0;
+  width: 100%;
+  color: black;
+  font-weight: 100;
+  opacity: 0.7;
+}
+
+.info {
+  text-align: center;
+  color: black;
+  font-weight: 600;
+  background-color: azure;
+  opacity: 0.7;
+  border-radius: 10px;
+  border: 2px solid black;
+  width: 20%;
+  padding: 5px;
+  margin: auto;
+}
+
+p {
+  top: 40px;
+  pointer-events: none;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
 }
 /*# sourceMappingURL=index.css.map */
