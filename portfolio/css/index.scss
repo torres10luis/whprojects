@@ -1,5 +1,6 @@
 // @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css";
 @import url("https://fonts.googleapis.com/css?family=Mina");
+// @import url('https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css');
 html {
   background-image: url("../Img/kawasaki.jpg");
   background-repeat: no-repeat;
@@ -38,6 +39,24 @@ header {
     border: 2px solid black;
   }
 }
+ul{
+  display: inline; 
+  padding: 0;
+  li{
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+  }
+}
+a{
+  color: black;
+  font-size: 25px;
+}
+.ig{
+  animation: steps(5) 10s infinite alternate;
+}
+
+
 #columns {
   display: flex;
   justify-content: center;
@@ -112,7 +131,10 @@ h1{
     margin:0;
     padding: 0;
 }
-
+// #ig {
+//   font-size: 100px;
+//   color: red;
+// }
 @keyframes bounce {
   from {
     transform: translateY(0px);
