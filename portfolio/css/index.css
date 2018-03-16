@@ -43,6 +43,7 @@ header {
 ul {
   display: inline;
   padding: 0;
+  list-style: none;
 }
 
 ul li {
@@ -71,7 +72,7 @@ a {
   height: 200px;
   border: none;
   border-radius: 20px;
-  text-align: center;
+  text-align: left;
   margin: 10px;
 }
 
@@ -83,6 +84,10 @@ img {
 .fa-child {
   margin-top: 20px;
   animation: bounce 1s infinite alternate;
+}
+
+.instagram {
+  animation: bounce 2s infinite alternate;
 }
 
 .overlay {

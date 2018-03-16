@@ -41,7 +41,8 @@ header {
 }
 ul{
   display: inline; 
-  padding: 0;
+  padding: 0; 
+  list-style: none;
   li{
     list-style: none; 
     margin: 0;
@@ -60,17 +61,7 @@ a{
 #columns {
   display: flex;
   justify-content: center;
-//   margin: 3px;
-//   justify-content: sp
 }
-// div{
-//     // display:block;
-//     position: relative;
-//     width: 200px;
-//     height: 200px;
-//     border-radius: 5px;
-//     margin: 0;
-// }.
 .project {
 //   display:block;
   position: relative;
@@ -78,7 +69,7 @@ a{
   height: 200px;
   border:none;
   border-radius: 20px;
-  text-align: center;
+  text-align: left;
   margin: 10px;
 }
 img {
@@ -88,6 +79,9 @@ img {
 .fa-child {
   margin-top: 20px;
   animation: bounce 1s infinite alternate;
+}
+.instagram{
+  animation: bounce 2s infinite alternate;
 }
 .overlay {
   position: absolute;
