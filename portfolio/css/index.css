@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Mina");
 html {
-  background-image: url("../Img/kawasaki.jpg");
+  background-color: red;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -130,7 +130,6 @@ footer {
 
 p {
   top: 40px;
-  pointer-events: none;
 }
 
 h1 {
