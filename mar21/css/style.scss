@@ -1,0 +1,49 @@
+$black: hsla(0, 0, 19%, 1);
+
+body{
+    margin: 0;
+}
+button{
+    border: 1px solid darken($black, 10);
+    border-radius: 4px;
+    padding: 10px;
+    font-size: inherit;
+    &:hover {
+        background-color: lighten($black, 50);
+        cursor: pointer;
+        // cursor: url('../img/357e764147098677b13ab12cbbe3cf73 (1).png')
+    }
+}
+
+h1{
+    // background-image: url('/img/firework.webp');
+    padding: 25px;
+    background-size: cover;
+    background-position: center;
+}
+
+body{
+    background-color: white;
+    transition: background-color 500ms;
+}
+
+body.colorize {
+    background-color: red;
+}
+nav{
+    padding: 10px;
+    background-color: $black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+div{
+    // margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+p{
+    background-size: cover;
+    background-position: center;
+}

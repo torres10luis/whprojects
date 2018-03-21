@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+}
+
+button {
+  border: 1px solid #171717;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: inherit;
+}
+
+button:hover {
+  background-color: #b0b0b0;
+  cursor: pointer;
+}
+
+h1 {
+  padding: 25px;
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  background-color: white;
+  transition: background-color 500ms;
+}
+
+body.colorize {
+  background-color: red;
+}
+
+nav {
+  padding: 10px;
+  background-color: #303030;
+  display: flex;
+  justify-content: flex-end;
+}
+
+div {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  background-size: cover;
+  background-position: center;
+}
+/*# sourceMappingURL=style.css.map */
