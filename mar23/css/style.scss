@@ -1,0 +1,38 @@
+@import url(https://use.fontawesome.com/releases/v5.0.8/css/all.css);
+
+
+body{
+    margin:0;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+nav{
+    // position: fixed;
+    background-color: black;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        margin:0;
+        list-style: none;
+    }
+
+}
+button{
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    // text-decoration-color: black;
+    &.hover {
+        cursor: pointer;
+        color: red;
+        text-indent: 5px;
+    } 
+}
+nav.verticalNav{
+    position: fixed;
+    top:0;
+    right:0;
+    background-color: black;
+    width:250px;
+}
