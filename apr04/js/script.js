@@ -174,21 +174,26 @@
 
 // initial();
 
+var startStory = document.getElementById('opt1');
+
+startStory.addEventListener("click", story);
 
 function story(){
-    var person = prompt('what will you choose left or right or up?')
+    var person = prompt('what will you choose left or right or up?');
     // var txt = alert('no go my friend')
-    if(confirm("you chose left"));
-    else if(('you chose right'));
-    // else(person == null || person == ""){
-        // txt = "incorrect choice";
+    if('left'){
+        alert('welcome to the left side ');
+    }
+    else if('right'){
+        alert('welcome to the right side');
+    } 
+    else if(up){
+        
+    }
+   
     
-
-
 
     console.log(person);
 }
 
-
-
-story();
+// story();
