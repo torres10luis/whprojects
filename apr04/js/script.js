@@ -175,25 +175,45 @@
 // initial();
 
 var startStory = document.getElementById('opt1');
-
 startStory.addEventListener("click", story);
+// var gtr = 
 
 function story(){
-    var person = prompt('what will you choose left or right or up?');
-    // var txt = alert('no go my friend')
-    if('left'){
-        alert('welcome to the left side ');
-    }
-    else if('right'){
-        alert('welcome to the right side');
-    } 
-    else if(up){
-        
-    }
-   
+    var person = prompt('Need to make a quick decision, what car will you choose gtr, mcclaren, ferrari?');
+    // var gtr = prompt('hi');
+    // var ferrari = prompt('you chose the ferrari now to chose your next modification')
     
+    if(person == 'gtr'){
+        
+        gtr();
+    }
+    else if( person == 'ferrari'){
+        ferrari();
+    } 
+    else if(person == 'mcclaren'){ 
+        mcclaren;
+    }
+    else{
+        alert('ERROR MY FRIEND PLEASE SELECT A CORRECT CHOICE THANK YOU! :) ');
+    }
 
     console.log(person);
 }
 
-// story();
+function gtr(){
+    var color = prompt('time to prep up your car. what color will you choose. red, white, black')
+    if(color == 'black'){
+        alert('you chose blackout gtr classy look ');
+
+    }
+    else if( color == ''){
+        prompt('you chose the ferrari');
+    } 
+    else if(color == 'mcclaren'){ 
+        prompt('you chose the mcclaren');
+    }
+    else{
+        alert('ERROR MY FRIEND PLEASE SELECT A CORRECT CHOICE THANK YOU! :) ');
+    }
+}
+
