@@ -1,3 +1,21 @@
 body{
     background-color: burlywood;
 }
+
+
+.button {
+    border-radius: 4px;
+    background-color:gray;
+    border: none;
+    color: black;
+    cursor: pointer;
+
+  }
+  
+  .button span {
+    transition: .3s;
+  }
+  
+  .button:hover span {
+    padding-right: 20px;
+  }

@@ -176,44 +176,55 @@
 
 var startStory = document.getElementById('opt1');
 startStory.addEventListener("click", story);
-// var gtr = 
 
-function story(){
-    var person = prompt('Need to make a quick decision, what car will you choose gtr, mcclaren, ferrari?');
-    // var gtr = prompt('hi');
-    // var ferrari = prompt('you chose the ferrari now to chose your next modification')
+var nameUser = document.getElementById('userinput');
+
+function start(){
+    var greeting = prompt('Welcome to the beginning of your journey, What is your name?')
+console.log(greeting);
     
-    if(person == 'gtr'){
+    nameUser.innerHTML = greeting;
+    
+}
+
+start();
+function story(){
+    var person = prompt('First need to make a quick decision, what car will you choose gtr, mcclaren, ferrari?');
+
+    
+    if(person == 'gtr' || person == 'Gtr'){
         
-        gtr();
+        colorChoice();
     }
-    else if( person == 'ferrari'){
-        ferrari();
+    else if( person == 'ferrari' || person == 'Ferarri'){
+        colorChoice();
     } 
-    else if(person == 'mcclaren'){ 
-        mcclaren;
+    else if(person == 'mcclaren' || person == 'McClaren' || person == 'Mcclaren'){ 
+        colorChoice();
     }
     else{
-        alert('ERROR MY FRIEND PLEASE SELECT A CORRECT CHOICE THANK YOU! :) ');
+        alert('error please try again ');
     }
+ 
 
     console.log(person);
 }
 
-function gtr(){
-    var color = prompt('time to prep up your car. what color will you choose. red, white, black')
-    if(color == 'black'){
-        alert('you chose blackout gtr classy look ');
-
+function colorChoice(){
+    var color = prompt('Now time to prep up your car. what color will you choose. red, white, black')
+    if(color == 'black' || color == 'Black'){
+        alert('Great choice! You are rolling in a classy elegant black pe but .....  ');
     }
-    else if( color == ''){
-        prompt('you chose the ferrari');
+    else if( color == 'red' || color == 'Red'){
+        alert('Great choice! You are rolling in a fierce red  but ..... ' + color);
     } 
-    else if(color == 'mcclaren'){ 
-        prompt('you chose the mcclaren');
+    else if(color == 'white' || color == 'White'){ 
+        alert('Great choice! You are rolling in a classic white  but ..... ');
     }
     else{
-        alert('ERROR MY FRIEND PLEASE SELECT A CORRECT CHOICE THANK YOU! :) ');
+        alert('error please try again ');
+        // gtr();
     }
+    
 }
 
