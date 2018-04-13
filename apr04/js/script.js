@@ -180,7 +180,7 @@ startStory.addEventListener("click", story);
 var nameUser = document.getElementById('userinput');
 
 function start(){
-    var greeting = prompt('Welcome to the beginning of your journey, What is your name?')
+    var greeting = prompt('Welcome to the beginning of your journey, What is your name?');
 console.log(greeting);
     
     nameUser.innerHTML = greeting;
@@ -194,13 +194,13 @@ function story(){
     
     if(person == 'gtr' || person == 'Gtr'){
         
-        colorChoice();
+        colorChoice(person);
     }
     else if( person == 'ferrari' || person == 'Ferarri'){
-        colorChoice();
+        colorChoice(person);
     } 
     else if(person == 'mcclaren' || person == 'McClaren' || person == 'Mcclaren'){ 
-        colorChoice();
+        colorChoice(person);
     }
     else{
         alert('error please try again ');
@@ -210,21 +210,33 @@ function story(){
     console.log(person);
 }
 
-function colorChoice(){
-    var color = prompt('Now time to prep up your car. what color will you choose. red, white, black')
+function colorChoice(person){
+    var color = prompt('Now time to prep up your' + " " + person + " " + 'what color will you choose. red, white, black');
+
     if(color == 'black' || color == 'Black'){
-        alert('Great choice! You are rolling in a classy elegant black pe but .....  ');
+        // alert('Great choice! You are rolling in a classy elegant' + color );
+        final(color, person);
     }
     else if( color == 'red' || color == 'Red'){
-        alert('Great choice! You are rolling in a fierce red  but ..... ' + color);
+        alert('Great choice! You are rolling in a fierce' + color ); 
+        final();
     } 
     else if(color == 'white' || color == 'White'){ 
-        alert('Great choice! You are rolling in a classic white  but ..... ');
+        alert('Great choice! You are rolling in a classic' + color);
+        final();
     }
     else{
         alert('error please try again ');
-        // gtr();
+        colorChoice();
     }
     
+}
+
+function final(colorChoice, person){
+    var last = prompt('well you made it! now where will you escape to? canada, new york, california?')
+
+    if(last == 'canada'){
+        alert('Incredible you just stole a' + " " + colorChoice + " " + person + " " + "you reckless driver" );
+    }
 }
 
