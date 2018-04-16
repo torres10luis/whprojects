@@ -178,12 +178,14 @@ var startStory = document.getElementById('opt1');
 startStory.addEventListener("click", story);
 
 var nameUser = document.getElementById('userinput');
+var starts = document.getElementById('start');
 
 function start(){
-    var greeting = prompt('Welcome to the beginning of your journey, What is your name?');
+    var greeting = prompt('Welcome to the beginning of your journey, What is your  full name?');
 console.log(greeting);
     
     nameUser.innerHTML = greeting;
+    starts.innerHTML = greeting;
     
 }
 
@@ -218,12 +220,12 @@ function colorChoice(person){
         final(color, person);
     }
     else if( color == 'red' || color == 'Red'){
-        alert('Great choice! You are rolling in a fierce' + color ); 
-        final();
+        // alert('Great choice! You are rolling in a fierce' + color ); 
+        final(color,person);
     } 
     else if(color == 'white' || color == 'White'){ 
-        alert('Great choice! You are rolling in a classic' + color);
-        final();
+        // alert('Great choice! You are rolling in a classic' + color);
+        final(color, person);
     }
     else{
         alert('error please try again ');
@@ -236,7 +238,42 @@ function final(colorChoice, person){
     var last = prompt('well you made it! now where will you escape to? canada, new york, california?')
 
     if(last == 'canada'){
-        alert('Incredible you just stole a' + " " + colorChoice + " " + person + " " + "you reckless driver" );
+        alert('Incredible you just stole a' + " " + colorChoice + " " + person + " " + "you reckless driver, enjoy your ride through the nice mountain yet cold weather of beautiful canada" );
     }
+    else if(last == 'new york'){
+        alert('Incredible you just stole a' + " " + colorChoice + " " + person + " " + " Look at you now speeding away from the cops through the busy streets of new york city. so long my friend" );
+    }
+    else if(last == 'california'){
+        alert('Incredible you just stole a' + " " + colorChoice + " " + person + " " + "Beautiful paradise in the long sunny days of south california next to the miles and miles of breath taking beaches" );
+    }
+    else{
+        alert('choose city wisely.')
+    }
+    
+    ending.innerHTML = last;
 }
 
+// in progress for an additional sequence
+
+// var smalls = document.querySelectorAll('small');
+// var word1 = ['fast', 'fell'];
+// var word2 = ['deep', 'trap'];
+
+// for(var i=0; i< smalls.length; i++){
+//     var s = smalls[i];
+
+//     switch(smalls[i].className){
+//         case 'word1':
+//         smalls[i].textContent = word1[getRandNum(word1.length)];
+//         break;
+//         case 'word2':
+//         smalls[i].textContent = word2[getRandNum(word1.length)];
+//         break;
+//     }
+// }
+
+// function getRandNum(num){
+//     return Math.floor(Math.random() * num);
+// }
+
+// function setText();

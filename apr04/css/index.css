@@ -1,5 +1,5 @@
 body {
-  background-color: burlywood;
+  background-color: lightblue;
 }
 
 .button {
@@ -16,5 +16,12 @@ body {
 
 .button:hover span {
   padding-right: 20px;
+}
+
+.after:hover {
+  background-color: white;
+  border-radius: 5px;
+  transition: all 3s;
+  cursor: pointer;
 }
 /*# sourceMappingURL=index.css.map */
