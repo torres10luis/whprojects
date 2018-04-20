@@ -1,0 +1,29 @@
+ul{
+    padding:0;
+    margin:0;
+    list-style: none;
+    // background-color: lightblue;
+}
+
+//immediate child of 
+body > ul {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightblue;
+    
+    & > li {
+        width: 30%;
+        border: 1px solid white;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 4px;
+        background-color: white;
+    }
+    img {
+        width: 100%;
+    }
+    h3{
+        font-family: sans-serif;
+        background-color: #fff;
+    }
+}
