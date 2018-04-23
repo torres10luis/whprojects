@@ -173,6 +173,11 @@
 // }
 
 // initial();
+// function loginUser(){
+
+// }
+
+
 
 var startStory = document.getElementById('opt1');
 startStory.addEventListener("click", story);

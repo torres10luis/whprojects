@@ -1,5 +1,6 @@
 body{
-    background-color: lightblue;
+    // background-color: lightblue;
+    background-image: url('https://media.istockphoto.com/vectors/start-sign-path-landscape-sun-drawing-vector-id519406807');
 }
 
 .button {
@@ -14,16 +15,13 @@ body{
   .button span {
     transition: .3s;
   }
-  
   .button:hover span {
     padding-right: 20px;
   }
-
   .after:hover{
     background-color: white;
     border-radius: 5px;
     // opacity: .5;
     transition: all 2s;
     cursor: pointer;
-
   }
