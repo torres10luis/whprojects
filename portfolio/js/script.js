@@ -6,9 +6,9 @@
 
 var newProject = document.querySelector('#columns');
 
-function clickMe(){
+function clickMe(info){
     var clicked = document.addEventListener('projects', newProject);
-    // clicked.toggle("highlight");
+   
 
 newProject.addEventListener('click', clickMe);
     console.log('test');
