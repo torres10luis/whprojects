@@ -2,8 +2,12 @@
 html {
   background-image: url("../Img/kawasaki.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: auto;
   font-family: "Mina", sans-serif;
 }
 
@@ -86,6 +90,10 @@ img {
   animation: bounce 1s infinite alternate;
 }
 
+.instagram {
+  animation: bounce 2s infinite alternate;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -120,7 +128,7 @@ footer {
   border-radius: 10px;
   border: 2px solid black;
   width: 20%;
-  padding: 0px;
+  padding: 5px;
   margin: auto;
 }
 
@@ -141,4 +149,4 @@ h1 {
     transform: translateY(-15px);
   }
 }
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=style.css.map */

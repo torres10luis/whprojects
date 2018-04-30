@@ -4,12 +4,9 @@
 //     document.getElementById('main').style.backgroundColor = "blue";
 // }
 
-var newProject = document.querySelector('#columns');
+var projects = document.getElementsByClassName('pr');
+projects.addEventListener('click', clickMe);
 
-function clickMe(){
-newProject.addEventListener('click', clickMe);
+function clickMe(info){
     
-    console.log('test');
 }
-
-clickMe();

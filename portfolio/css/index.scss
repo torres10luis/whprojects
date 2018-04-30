@@ -5,12 +5,12 @@ html {
   // background-color: red;
   background-image: url("../Img/kawasaki.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-  margin: 0;
-  padding: 0;
-  height: auto;
-  width: auto;
+  // margin: 0;
+  // padding: 0;
+  // height: auto;
+  // width: auto;
   font-family: "Mina", sans-serif;
 }
 body{
@@ -87,9 +87,9 @@ img {
   margin-top: 20px;
   animation: bounce 1s infinite alternate;
 }
-.instagram{
-  animation: bounce 2s infinite alternate;
-}
+// .instagram{
+//   animation: bounce 2s infinite alternate;
+// }
 .overlay {
   position: absolute;
   top: 0;
@@ -121,12 +121,11 @@ footer {
   border-radius: 10px;
   border: 2px solid black;
   width:20%;
-  padding: 5px;
+  padding: 0px;
   margin:auto;
 }
 p {
-  
-  // pointer-events: none;
+  pointer-events: none;
 }
 h1{
     margin:0;

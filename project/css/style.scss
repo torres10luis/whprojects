@@ -1,91 +1,95 @@
+// @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css";
 @import url("https://fonts.googleapis.com/css?family=Mina");
+// @import url('https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css');
 html {
+  // background-color: red;
   background-image: url("../Img/kawasaki.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: auto;
   font-family: "Mina", sans-serif;
 }
-
-body {
+body{
   height: auto;
 }
-
 header {
   text-align: center;
   display: flex;
   height: 200px;
 }
-
+// body{
+//   height: 100vh;
+//   width: 100vw;
+// }
 .img1 {
   flex-direction: column;
   margin-left: 47%;
+  // margin-right: 50%;
+  .img-circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    margin: 0;
+    padding: 0;
+  }
+  figcaption {
+    color: black;
+    font-weight: 600;
+    background-color: azure;
+    opacity: 0.7;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid black;
+  }
 }
-
-.img1 .img-circle {
-  height: 100px;
-  width: 100px;
-  border-radius: 50px;
-  margin: 0;
-  padding: 0;
-}
-
-.img1 figcaption {
-  color: black;
-  font-weight: 600;
-  background-color: azure;
-  opacity: 0.7;
-  height: auto;
-  border-radius: 10px;
-  border: 2px solid black;
-}
-
-ul {
-  display: inline;
-  padding: 0;
+ul{
+  display: inline; 
+  padding: 0; 
   list-style: none;
+  li{
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+  }
 }
-
-ul li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-a {
+a{
   color: black;
   font-size: 25px;
 }
-
-.ig {
+.ig{
   animation: steps(5) 10s infinite alternate;
 }
+
 
 #columns {
   display: flex;
   justify-content: center;
 }
-
 .project {
+//   display:block;
   position: relative;
   width: 200px;
   height: 200px;
-  border: none;
+  border:none;
   border-radius: 20px;
   text-align: left;
-  margin: 10px;
+  margin: 10px; 
 }
-
 img {
   width: 100%;
   height: 100%;
 }
-
 .fa-child {
   margin-top: 20px;
   animation: bounce 1s infinite alternate;
 }
-
+.instagram{
+  animation: bounce 2s infinite alternate;
+}
 .overlay {
   position: absolute;
   top: 0;
@@ -96,11 +100,9 @@ img {
   transition: all 1s ease;
   background-color: lightblue;
 }
-
 div:hover .overlay {
   opacity: 1;
 }
-
 footer {
   position: fixed;
   left: 0;
@@ -110,7 +112,6 @@ footer {
   font-weight: 100;
   opacity: 0.7;
 }
-
 .info {
   text-align: center;
   color: black;
@@ -119,20 +120,22 @@ footer {
   opacity: 0.7;
   border-radius: 10px;
   border: 2px solid black;
-  width: 20%;
-  padding: 0px;
-  margin: auto;
+  width:20%;
+  padding: 5px;
+  margin:auto;
 }
-
 p {
+  
   pointer-events: none;
 }
-
-h1 {
-  margin: 0;
-  padding: 0;
+h1{
+    margin:0;
+    padding: 0;
 }
-
+// #ig {
+//   font-size: 100px;
+//   color: red;
+// }
 @keyframes bounce {
   from {
     transform: translateY(0px);
@@ -141,4 +144,3 @@ h1 {
     transform: translateY(-15px);
   }
 }
-/*# sourceMappingURL=index.css.map */
