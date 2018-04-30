@@ -7,11 +7,11 @@
 var newProject = document.querySelector('#columns');
 
 function clickMe(){
-    var clicked = document.addEventListener('projects');
-    clicked.classList.toggle("highlight");
+    var clicked = document.addEventListener('projects', newProject);
+    // clicked.toggle("highlight");
 
-// newProject.addEventListener('click', clickMe);
-//     console.log('test');
+newProject.addEventListener('click', clickMe);
+    console.log('test');
 }
 
 clickMe();
