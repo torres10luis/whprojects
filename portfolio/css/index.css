@@ -2,8 +2,12 @@
 html {
   background-image: url("../Img/kawasaki.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: auto;
   font-family: "Mina", sans-serif;
 }
 
@@ -15,6 +19,11 @@ header {
   text-align: center;
   display: flex;
   height: 200px;
+}
+
+body {
+  height: auto;
+  width: auto;
 }
 
 .img1 {
