@@ -146,6 +146,16 @@
   font-style: inherit;
 }
 
+#gallery h2 {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 500;
+  border: 2px dashed black;
+  border-radius: 10px;
+  background-color: snow;
+  opacity: 0.6;
+}
+
 #gallery ul {
   margin: auto;
   padding: 10px;

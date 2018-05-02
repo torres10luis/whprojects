@@ -130,13 +130,22 @@
       font-weight: 600;
       font-style: inherit;
     }
+  }
+  h2{
+    display: flex;
+    justify-content: space-around;
+    font-weight: 500;
+    border: 2px dashed black;
+    border-radius: 10px;
+    background-color: snow;
+    opacity: 0.6;
 
   }
-  ul{
+  ul {
     margin: auto;
     padding: 10px;
     list-style: none;
-  }
+  }  
   img{
     height: 100px;
     width: 100px;
