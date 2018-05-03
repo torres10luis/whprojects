@@ -6,9 +6,7 @@
   background-size: cover;
   background-position: center;
   margin: 0;
-  padding: 0;
-  height: auto;
-  width: auto;
+  height: 100%;
   font-family: "Mina", sans-serif;
 }
 
@@ -100,11 +98,7 @@
   opacity: 0;
   transition: all 1s ease;
   background-color: lightblue;
-}
-
-#main .overlay p .text {
-  box-sizing: content-box;
-  max-height: fit-content;
+  word-wrap: break-word;
 }
 
 #main div:hover .overlay {
@@ -138,6 +132,7 @@
 #gallery button {
   margin: auto;
   padding: 0;
+  border-radius: 100px;
 }
 
 #gallery button a {
@@ -150,7 +145,6 @@
   display: flex;
   justify-content: space-around;
   font-weight: 500;
-  border: 2px dashed black;
   border-radius: 10px;
   background-color: snow;
   opacity: 0.6;
