@@ -1,0 +1,27 @@
+code {
+	background-color: #ebebeb;
+	font-family: "SFMono-Regular", Consolas, Courier, monospace;
+	padding: 3px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.card-environment {
+	float: left;
+	width: 60%;
+}
+
+.instruction {
+	float: left;
+	width: 40%;
+	padding-right: 2em;
+}
+
+.main {
+	margin-bottom: 3em;
+	margin-top: 3em;
+}
+
+.clear {
+	clear: left;
+}
