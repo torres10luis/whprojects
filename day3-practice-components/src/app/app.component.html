@@ -1,0 +1,14 @@
+
+
+
+<warning-message></warning-message>
+<hr>
+<button class="btn btn-primary" (click)="selectedComponent()">pick one componen</button>
+
+<div class="row" *ngIf="componentSelected">
+
+  <warning-message *ngIf="!index"></warning-message>
+  <div app-success-message></div>
+  <div class="danger-message" *ngIf="index ==1"> </div>
+
+</div>
