@@ -11,7 +11,7 @@ function clickMe(info){
    
 
 newProject.addEventListener('click', clickMe);
-    console.log('test');
+    console.log('clicked');
 }
 
 clickMe();

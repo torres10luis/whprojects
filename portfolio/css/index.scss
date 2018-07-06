@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Mina");
 @import url('https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css');
+html{
+  // background-image: url("/Img/kawasaki.jpg");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center;
+}
   #main{
   
     // background-color:black;
-    background-image: url("/Img/kawasaki.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     margin: 0;
     // padding: 0;
     height: 100%;
@@ -19,6 +21,10 @@
     height: 200px;
   }
   body{
+    background-image: url("/Img/kawasaki.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
     height: auto;
     width: auto;
   }
@@ -93,10 +99,12 @@
     word-wrap: break-word;
     // box-sizing: 
     
-    // p .text{
-    //   box-sizing: content-box;
-    //   max-height: fit-content;
-    // }
+     
+    p.text{
+      box-sizing: content-box;
+      max-height: fit-content;
+      // font-size: 300px;
+    }
   }
   div:hover .overlay {
     opacity: 1;
@@ -158,4 +166,13 @@
     justify-content: end;
     padding: 10px;
   }
+  
+}
+    @media only screen and (max-width: 680px) {
+      
+        p.text{
+      font-size: 10px;
+      
+  
+      }
 }

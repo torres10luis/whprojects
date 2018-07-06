@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Mina");
 @import url("https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css");
 #main {
-  background-image: url("/Img/kawasaki.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   margin: 0;
   height: 100%;
   font-family: "Mina", sans-serif;
@@ -12,17 +8,26 @@
 
 #main header {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 200px;
 }
 
 #main body {
+  background-image: url("/Img/kawasaki.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   height: auto;
   width: auto;
 }
 
 #main .img1 {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: auto;
 }
 
@@ -62,12 +67,17 @@
 }
 
 #main .ig {
-  animation: steps(5) 10s infinite alternate;
+  -webkit-animation: steps(5) 10s infinite alternate;
+          animation: steps(5) 10s infinite alternate;
 }
 
 #main #columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #main #columns .project {
@@ -86,7 +96,8 @@
 
 #main .fa-child {
   margin-top: 20px;
-  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
+          animation: bounce 1s infinite alternate;
 }
 
 #main .overlay {
@@ -96,9 +107,18 @@
   width: 100%;
   height: 100%;
   opacity: 0;
+  -webkit-transition: all 1s ease;
   transition: all 1s ease;
   background-color: lightblue;
   word-wrap: break-word;
+}
+
+#main .overlay p.text {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
 }
 
 #main div:hover .overlay {
@@ -116,12 +136,25 @@
   margin: auto;
 }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
   from {
-    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
   to {
-    transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
   }
 }
 
@@ -142,8 +175,11 @@
 }
 
 #gallery h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   font-weight: 500;
   border-radius: 10px;
   background-color: snow;
@@ -162,8 +198,18 @@
 }
 
 #gallery button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   padding: 10px;
+}
+
+@media only screen and (max-width: 680px) {
+  p.text {
+    font-size: 10px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
